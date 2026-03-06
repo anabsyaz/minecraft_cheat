@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "utilitymod",
+  "version": "${version}",
+  "name": "Utility Mod",
+  "description": "Client-side utility features: ESP, Aimbot, Vanish Detection",
+  "authors": ["Example"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/utilitymod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.utilmod.UtilityMod"
+    ]
+  },
+  "mixins": [
+    "utilmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
